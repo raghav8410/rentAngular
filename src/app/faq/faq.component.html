@@ -1,11 +1,11 @@
 <app-header></app-header>
 
 <div class="faq">
-    <h4>FAQs</h4>
+    <h3>FAQs</h3>
     <div *ngFor="let question of questionList; let i = index;" class="questions">
-        <h4>{{question.question}}</h4>
-        <h5>{{question.answer}}</h5>
-        <h6>{{question.features}}</h6>
+        <p>{{question.question}}?</p>
+        <p>{{question.answer}}</p>
+        <p>{{question.features}}</p>
     </div>
 </div>
 

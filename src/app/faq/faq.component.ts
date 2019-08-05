@@ -11,6 +11,7 @@ export class FaqComponent implements OnInit {
   constructor() { }
 
   public questionList = [];
+  public quesList = [];
   public faq : faqModel;
   public questions=[
     {
@@ -203,6 +204,9 @@ export class FaqComponent implements OnInit {
   ]
 
   ngOnInit() {
+
+    this.quesList = this.questions;
+    console.log(this.quesList);
     this.questions.forEach(question => {
       this.faq = new faqModel();
       this.faq.setQuestion(question);
