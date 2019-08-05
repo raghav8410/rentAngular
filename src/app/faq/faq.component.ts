@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {faqModel} from './faqModel';
 
 @Component({
   selector: 'app-faq',
@@ -9,6 +10,8 @@ export class FaqComponent implements OnInit {
 
   constructor() { }
 
+  public questionList = [];
+  public faq : faqModel;
   public questions=[
     {
       question: "How does the subscription service work",
@@ -200,6 +203,14 @@ export class FaqComponent implements OnInit {
   ]
 
   ngOnInit() {
+    this.questions.forEach(question => {
+      this.faq = new faqModel();
+      this.faq.setQuestion(question);
+      this.questionList.push(this.faq.getQuestion())
+    })
+    console.log(this.questionList);
+
   }
 
+  
 }

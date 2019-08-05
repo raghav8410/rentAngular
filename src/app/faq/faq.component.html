@@ -1,12 +1,12 @@
+<app-header></app-header>
+
 <div class="faq">
     <h4>FAQs</h4>
-    <div class="questions">
-        <div>
-            <p></p>
-            <p></p>
-            <ul>
-                <li></li>
-            </ul>
-        </div>
+    <div *ngFor="let question of questionList; let i = index;" class="questions">
+        <h4>{{question.question}}</h4>
+        <h5>{{question.answer}}</h5>
+        <h6>{{question.features}}</h6>
     </div>
 </div>
+
+<app-footer></app-footer>

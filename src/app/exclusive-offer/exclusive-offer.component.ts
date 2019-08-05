@@ -81,8 +81,6 @@ export class ExclusiveOfferComponent implements OnInit {
       this.offerList.push(this.offerModel.getOffer())
     })
 
-    console.log(this.offerList);
-
     this.singleCard.forEach(offer => {
       this.offerModel = new ExclusiveOfferModel();
       this.offerModel.setOffer(offer)

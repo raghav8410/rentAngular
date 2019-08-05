@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ExclusiveOfferComponent } from './exclusive-offer/exclusive-offer.component';
 import { SubscriptionPlanComponent } from './subscription-plan/subscription-plan.component';
 import { FaqComponent } from './faq/faq.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FaqComponent } from './faq/faq.component';
     FooterComponent,
     ExclusiveOfferComponent,
     SubscriptionPlanComponent,
-    FaqComponent
+    FaqComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
