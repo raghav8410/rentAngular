@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.header_logo img {
+    width: 30%
+}
+
+.header_faq {
+    margin-top: 20px;
+}
+
+.header_faq a {
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    padding: 5px 5px;
+}

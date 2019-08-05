@@ -1,0 +1,115 @@
+<h2>YOUR EXCLUSIVE OFFERS</h2>
+
+<div *ngFor="let offer of singleOffer; let i = index;" class="offers">
+    <div>
+
+        <h4>{{offer.planType}} {{offer.duration}} MONTH:<br> ${{offer.pricePerMonth}}/MONTH PLAN</h4>
+
+        <p>YOU SAVE</p>
+
+        <h3>${{offer.discount}}</h3>
+
+        <hr>
+
+    </div>
+
+    <ul>
+
+        <li><img src="../../assets/images/tick.jpg">{{offer.duration}} month of ${{offer.pricePerMonth}}/month plan</li>
+
+        <li><img src="../../assets/images/tick.jpg">{{offer.totalPiece}} total pieces</li>
+
+        <li><img src="../../assets/images/tick.jpg">Free shipping for {{offer.duration}} month</li>
+
+        <li><img src="../../assets/images/tick.jpg">Free insurance for {{offer.duration}} month</li>
+
+    </ul>
+
+    <div *ngIf="offer.extraFeatureMonths == 0">
+
+        <hr>
+
+        <h5></h5>
+
+        <ul class="extra-feature">
+
+            <li><b></b></li>
+
+            <li></li>
+
+            <li></li>
+
+            <li></li>
+
+        </ul>
+
+    </div>
+
+    <h6><b>YOUR PRICE: ${{offer.regularPrice - offer.discount}}</b><span>+ tax</span></h6>
+
+    <p class="regular-price">Regular Price ${{offer.regularPrice}}<span>+ tax</span></p>
+
+    <button>Pre-Pay {{offer.duration}} Month</button>
+</div>
+
+<div *ngFor="let offer of offerList; let i = index;" class="offers">
+    <div>
+        <div>
+
+            <h4>{{offer.planType}} {{offer.duration}} MONTH:<br> ${{offer.pricePerMonth}}/MONTH PLAN</h4>
+
+            <p>YOU SAVE</p>
+
+            <h3>${{offer.discount}}</h3>
+
+            <hr>
+
+        </div>
+
+        <ul>
+
+            <li><img src="../../assets/images/tick.jpg">{{offer.duration}} month of ${{offer.pricePerMonth}}/month plan</li>
+
+            <li><img src="../../assets/images/tick.jpg">{{offer.totalPiece}} total pieces</li>
+
+            <li><img src="../../assets/images/tick.jpg">Free shipping for {{offer.duration}} month</li>
+
+            <li><img src="../../assets/images/tick.jpg">Free insurance for {{offer.duration}} month</li>
+
+        </ul>
+
+        <hr>
+
+        <div *ngIf="offer.extraFeatureMonths != 0">
+
+            <h5>PLUS</h5>
+
+            <ul class="extra-feature">
+
+                <li><b>{{offer.extraFeatureMonths}} Extra months of</b></li>
+
+                <li><img src="../../assets/images/star.jpg">Free shipping</li>
+
+                <li><img src="../../assets/images/star.jpg">Free insurance</li>
+
+                <li><img src="../../assets/images/star.jpg"><b>Subscription price<br> guarantee*</b></li>
+
+            </ul>
+
+        </div>
+
+        <h6><b>YOUR PRICE: ${{offer.regularPrice - offer.discount}}</b><span>+ tax</span></h6>
+
+        <p class="regular-price">Regular Price ${{offer.regularPrice}}<span>+ tax</span></p>
+
+        <button>Pre-Pay {{offer.duration}} Month</button>
+
+    </div>
+
+    <p>
+
+        <!-- *you are not subject to any price increases for 12 months from date of first shipment -->
+
+    </p>
+
+</div>

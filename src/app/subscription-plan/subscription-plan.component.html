@@ -1,0 +1,13 @@
+<h2>STYLE PROFILE SUMMARY</h2>
+<h2>SUBSCRIPTION PLANS</h2>
+
+<div class="subscription-plan">
+    <div *ngFor="let plan of planList; let i = index" class="subscription-card">
+        <p class="subscription-plan-number">{{plan.planName}}</p>
+        <p class="rent-pieces">Rent {{plan.rentPerPiece}} pieces/month</p>
+        <p class="picked">Picked by you or a stylist</p>
+        <p class="swap">Swap {{plan.swapPiece}} piece,<br>once a month</p>
+        <p class="total-pieces">Giving you up to {{plan.totalPiece}} total<br> pieces/month</p>
+        <h4>${{plan.price}}/month</h4>
+    </div>
+</div>
