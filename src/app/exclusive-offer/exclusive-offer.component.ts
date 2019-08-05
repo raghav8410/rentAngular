@@ -14,17 +14,6 @@ export class ExclusiveOfferComponent implements OnInit {
   public singleOffer = [];
   public offerModel: ExclusiveOfferModel;
   public exclusiveOffer = [
-    // {
-    //   planType: "PRE-PAY",
-    //   duration: 1,
-    //   discount: 29.95,
-    //   pricePerMonth: 99,
-    //   totalPiece: "4 - 5",
-    //   regularPrice: 128.94,
-    //   extraFeatureMonths: 0,
-    //   color: "#535989",
-    //   mostPopular: false
-    // },
     {
       planType: "PRE-PAY",
       duration: 1,

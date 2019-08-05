@@ -9,6 +9,7 @@ import { ExclusiveOfferComponent } from './exclusive-offer/exclusive-offer.compo
 import { SubscriptionPlanComponent } from './subscription-plan/subscription-plan.component';
 import { FaqComponent } from './faq/faq.component';
 import { HomeComponent } from './home/home.component';
+import { ProfileSummaryComponent } from './profile-summary/profile-summary.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './home/home.component';
     ExclusiveOfferComponent,
     SubscriptionPlanComponent,
     FaqComponent,
-    HomeComponent
+    HomeComponent,
+    ProfileSummaryComponent
   ],
   imports: [
     BrowserModule,

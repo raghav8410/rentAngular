@@ -1,0 +1,40 @@
+h2 {
+    text-align: center;
+    font-family: Inconsolata;
+    margin: 50px 0;
+}
+
+.detail {
+    display: flex;
+}
+
+.profile-summary {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.detail-img {
+    display: flex;
+    align-items: center;
+    color: #8F8F8F;
+    font-size: 13px;
+    font-family: Lato;
+}
+
+.profile_card_title div {
+    font-size: 15px;
+    color: #000000;
+}
+
+.detail {
+    align-items: center;
+}
+
+span {
+    color: #2f2f2f;
+    font-size: 11px;
+    margin-left: 100px;
+    font-weight: 800;
+    font-family: Montserrat;
+    text-align: right;
+}
