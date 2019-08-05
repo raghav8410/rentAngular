@@ -14,6 +14,17 @@ export class ExclusiveOfferComponent implements OnInit {
   public singleOffer = [];
   public offerModel: ExclusiveOfferModel;
   public exclusiveOffer = [
+    // {
+    //   planType: "PRE-PAY",
+    //   duration: 1,
+    //   discount: 29.95,
+    //   pricePerMonth: 99,
+    //   totalPiece: "4 - 5",
+    //   regularPrice: 128.94,
+    //   extraFeatureMonths: 0,
+    //   color: "#535989",
+    //   mostPopular: false
+    // },
     {
       planType: "PRE-PAY",
       duration: 1,
@@ -22,7 +33,8 @@ export class ExclusiveOfferComponent implements OnInit {
       totalPiece: "6 - 12",
       regularPrice: 228.95,
       extraFeatureMonths: 0,
-      color: "#71775C"
+      color: "#71775C",
+      mostPopular: false
     },
     {
       planType: "PRE-PAY",
@@ -32,7 +44,8 @@ export class ExclusiveOfferComponent implements OnInit {
       totalPiece: "18 - 36",
       regularPrice: 956.40,
       extraFeatureMonths: 9,
-      color: "#CB5625"
+      color: "#CB5625",
+      mostPopular: true
     },
     {
       planType: "PRE-PAY",
@@ -42,7 +55,8 @@ export class ExclusiveOfferComponent implements OnInit {
       totalPiece: "72 - 144",
       regularPrice: 3466.20,
       extraFeatureMonths: 24,
-      color: "#EEA12F"
+      color: "#EEA12F",
+      mostPopular: false
     }
   ];
 
@@ -55,7 +69,8 @@ export class ExclusiveOfferComponent implements OnInit {
       totalPiece: "4 - 5",
       regularPrice: 128.94,
       extraFeatureMonths: 0,
-      color: "#535989"
+      color: "#535989",
+      mostPopular: false
     }
   ]
 
@@ -65,6 +80,8 @@ export class ExclusiveOfferComponent implements OnInit {
       this.offerModel.setOffer(offer)
       this.offerList.push(this.offerModel.getOffer())
     })
+
+    console.log(this.offerList);
 
     this.singleCard.forEach(offer => {
       this.offerModel = new ExclusiveOfferModel();

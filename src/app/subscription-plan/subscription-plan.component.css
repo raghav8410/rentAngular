@@ -4,12 +4,24 @@ h2 {
     margin: 25px 0;
 }
 
-.subscription-plan {
-    display: flex;
-    justify-content: space-evenly;
+.subscription {
     background-color: #F7F5F9;
     margin-left: 11%;
     max-width: 79%;
+}
+
+#description {
+    font-family: Lato;
+    margin-left: 185px;
+    font-size: 18px;
+    text-align: center;
+    max-width: 63%;
+    padding-top: 24px;
+}
+
+.subscription-plan {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .subscription-card {
@@ -52,4 +64,42 @@ h2 {
 h4 {
     padding: 20px 0;
     font-size: 20px;
+}
+
+.content {
+    display: none;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    width: 250px;
+    position: absolute;
+    text-align: initial;
+    background: #F7F5F9;
+    font-size: 12px;
+    padding: 15px;
+    transform: translate(-18%, -66%);
+}
+
+.content:hover {
+    display: block;
+}
+
+.info {
+    position: absolute;
+    transform: translate(410%, -95%);
+}
+
+.info:hover+.content {
+    display: block;
+}
+
+@media(max-width:768px) {
+    .subscription-plan {
+        flex-direction: column;
+        align-items: center;
+    }
+    #description {
+        max-width: 100%;
+        margin-left: 0;
+    }
 }

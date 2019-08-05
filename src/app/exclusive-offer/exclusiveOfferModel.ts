@@ -8,6 +8,7 @@ export class ExclusiveOfferModel{
     private regularPrice: number;
     private color: string;
     private extraFeatureMonths: number;
+    private mostPopular : boolean; 
 
     public setOffer(offer){
         this.planType = offer.planType,
@@ -17,7 +18,8 @@ export class ExclusiveOfferModel{
         this.totalPiece = offer.totalPiece,
         this.regularPrice = offer.regularPrice,
         this.color = offer.color,
-        this.extraFeatureMonths = offer.extraFeatureMonths
+        this.extraFeatureMonths = offer.extraFeatureMonths,
+        this.mostPopular = offer.mostPopular
     }
 
     public getOffer(){
@@ -29,7 +31,8 @@ export class ExclusiveOfferModel{
             totalPiece : this.totalPiece,
             regularPrice : this.regularPrice,
             color : this.color,
-            extraFeatureMonths : this.extraFeatureMonths
+            extraFeatureMonths : this.extraFeatureMonths,
+            mostPopular : this.mostPopular
         }
         return offer;
     }
